@@ -12,7 +12,8 @@ $(function () {
   });
 
   $(".menu-btn").click(function () {
-    console.log("here");
+    // console.log("here");
     $(".navbar .menu").toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
   });
 });

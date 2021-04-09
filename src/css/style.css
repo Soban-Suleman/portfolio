@@ -99,6 +99,16 @@
 }
 
 /* Media queries */
+@media (max-width: 1104px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
 @media (max-width: 947px) {
   .max-width {
     padding: 0 50px;
@@ -106,6 +116,9 @@
   .menu-btn {
     display: block;
     z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
   }
   .navbar .menu {
     position: fixed;
@@ -116,6 +129,7 @@
     top: 0;
     text-align: center;
     padding-top: 80px;
+    transition: all 0.5s ease;
   }
   .navbar .menu.active {
     left: 0;
@@ -127,5 +141,11 @@
     display: inline-block;
     margin: 20px 0;
     font-size: 30px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
   }
 }
