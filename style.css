@@ -39,7 +39,7 @@ section {
 .about,
 .services,
 .skills,
-.teams,
+.work,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -261,16 +261,16 @@ section .title::after {
 
 /* services section styling */
 .services,
-.teams {
+.work {
   color: #fff;
   background: #111;
 }
 .services .title::before,
-.teams .title::before {
+.work .title::before {
   background: #fff;
 }
 .services .title::after,
-.teams .title::after {
+.work .title::after {
   background: #111;
   content: "what i provide";
 }
@@ -341,6 +341,7 @@ section .title::after {
 .skills .skills-content .right .bars {
   margin-bottom: 15px;
 }
+
 .skills .skills-content .right .info {
   display: flex;
   margin-bottom: 5px;
@@ -381,11 +382,11 @@ section .title::after {
   width: 70%;
 }
 
-/* teams section styling */
-.teams .title::after {
-  content: "who with me";
+/* work section styling */
+.work .title::after {
+  content: "What i Have made";
 }
-.teams .carousel .card {
+.work .carousel .card {
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
@@ -393,25 +394,25 @@ section .title::after {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover {
+.work .carousel .card:hover {
   background: rgb(126, 177, 243);
 }
-.teams .carousel .card .box {
+.work .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box {
+.work .carousel .card:hover .box {
   transform: scale(1.05);
 }
-.teams .carousel .card .text {
+.work .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-.teams .carousel .card img {
+.work .carousel .card img {
   height: 150px;
   width: 150px;
   object-fit: cover;
@@ -419,7 +420,7 @@ section .title::after {
   border: 5px solid rgb(126, 177, 243);
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img {
+.work .carousel .card:hover img {
   border-color: #fff;
 }
 .owl-dots {
@@ -614,6 +615,7 @@ footer span a:hover {
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
+    margin: 10 10;
   }
   .max-width {
     max-width: 930px;
